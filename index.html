@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Little Message</title>
+    <link rel="stylesheet"href="/styles/style.css">
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br/">
+            <img class="imagem__cabecalho" src="assets/Logo.png" alt="link com o logo da alura">
+        </a>
+    </header>
+
+    <main class="conteudo">
+        <section class="primeiro__conteudo">
+            <textarea class="texto__codificar" cols="20" rows="10" placeholder="Digite a mensagem aqui"></textarea>
+
+            <div class="condição">
+                <h6>
+                    <img class="exclamacao" src="/assets/emoti.png" alt="ponto de exclamação "> Somente letras minúsculas, sem acento e caracteres especiais
+                </h6>
+            </div>
+            
+            <div class="botoes">
+                <button class="botao__codificar"  onclick="botaoCodificar()">Codificar</button>
+                <button class="botao__decodificar" onclick="botaoDecodificar()">Decodificar</button>
+            </div>
+        </section>
+
+        <section class="segundo__conteudo">
+            <div id="conteinerUm" class="segundo__conteudo__conteinerTopo">
+                <textarea id="texto__conteudo" class="texto__conteudo" cols="20" rows="10" placeholder="" readonly></textarea>
+                <button class="botao__mensagem" onclick="copiar()">Copiar</button>
+            </div>
+
+            <div id="conteiner" class="segundo__conteudo__conteiner">
+                <img class="imagem" src="assets/desenho-de-nuvem-e-chuva-para-pintar.webp" alt="nuvem com chuvas">
+                <h3 class="texto__conteudo__titulo">Nenhuma mensagem encontrada</h3>
+                <p class="texto__conteudo__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <h6>Desenvolvido por João Victhor</h6>
+            <a href="https://github.com/jkl10">
+            <img src="assets/github.png" alt="icone github">
+            </a>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
