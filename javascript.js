@@ -4,6 +4,14 @@ const copiarUm = document.querySelector(".botao__mensagem")
 document.getElementById("texto__conteudo").style.display = "none"
 document.getElementById("conteinerUm").style.display = "none"
 
+textArea.addEventListener('keypress', function(event) {
+    const regex = /^[a-zA-Z0-9\s]$/;
+
+    if (!regex.test(event.key)) {
+        event.preventDefault(); 
+    }
+})
+
 function trocarDeElementos(trocarElementos) {
     document.getElementById("conteiner").style.display = "none";
     document.getElementById("texto__conteudo").style.display = "flex"
